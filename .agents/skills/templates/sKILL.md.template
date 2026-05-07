@@ -1,0 +1,19 @@
+# 资源与脚本说明模板（sKILL.md.template）
+
+此模板用于说明技能目录中的脚本、模板与资源，以及如何调用与测试。
+
+示例结构：
+- scripts/run.sh — 主执行脚本
+- templates/config.tpl — 配置模板
+
+调用示例：
+```bash
+# 在技能目录下执行
+bash scripts/run.sh --input example
+```
+
+安装日志记录说明：
+- 安装后将测试与结果写入 `install.log`，包含时间、执行者与测试摘要。
+
+安全注意：
+- 请在脚本中避免硬编码密钥或外联未审计的主机；若需外部凭证，请在 AGENTs.md 指南中描述如何安全提供环境变量。
