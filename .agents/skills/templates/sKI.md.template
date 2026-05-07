@@ -1,0 +1,29 @@
+---
+title: "<skill-name>"
+version: "0.1"
+author: "author-or-agent"
+source: "https://github.com/owner/repo/path-or-skills.sh-link"
+description: "一句话说明技能能做什么"
+entry: "sKILL.md or scripts/run.sh"   # 可选，便于自动化调用
+resources: ["scripts/","templates/"]
+risk: "low"                           # low|medium|high
+license: "MIT"
+installed_at: ""                      # 由代理填写安装日期
+installed_by: ""                      # 由代理填写安装者（agent）
+tags: ["tag1","tag2"]
+---
+
+# 简要说明
+作用概述、适用场景与限制
+
+# 使用示例
+示例命令、输入/输出示范
+
+# 测试与自检
+建议的测试命令（agent 在安装后运行）
+
+# 卸载说明
+如何从 .agents/skills/ 中清理该技能
+
+# 依赖与安全注意
+列出依赖与须人工复核的点（若有）
