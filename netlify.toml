@@ -1,0 +1,10 @@
+[build]
+  publish = "docs"
+  command = ""
+
+[context.production]
+  environment = { }
+
+[context.deploy-preview]
+  command = ""
+  publish = "docs"
