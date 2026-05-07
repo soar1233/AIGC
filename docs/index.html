@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI-Guide — 开源 AI 知识导航</title>
+  <meta name="description" content="AI-Guide：面向开发者与研究者的开源 AI 知识库与学习路线导航，精选内容、路线图、更新日志与增长趋势一目了然。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <meta name="theme-color" content="#0f172a" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">AI-Guide</a>
+      <nav class="nav">
+        <a href="#overview">项目介绍</a>
+        <a href="#featured">精选内容</a>
+        <a href="#roadmap">路线图</a>
+        <a href="#changelog">更新日志</a>
+        <a href="#growth">增长趋势</a>
+        <a class="cta" href="https://github.com/soar1233/ai-guide" target="_blank" rel="noopener">关注 Repo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="overview">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1>AI-Guide — 你的开源 AI 知识导航</h1>
+          <p class="lead">从入门到进阶，从案例到实战，AI-Guide 为开发者和研究者提供结构化、可追踪、持续更新的知识路线与精选内容，帮助你在 AI 领域持续成长。</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="https://github.com/soar1233/ai-guide" target="_blank">查看开源仓库</a>
+            <a class="btn ghost" href="#featured">浏览精选</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="card stats">
+            <h3>项目亮点</h3>
+            <ul>
+              <li>路线化学习：清晰的学习路径与实践任务</li>
+              <li>精选资源：高质量教程、论文与代码示例</li>
+              <li>社区成长：持续更新的日志与增长数据</li>
+            </ul>
+            <a class="btn small" href="#roadmap">查看路线图</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="featured">
+      <h2 class="section-title">精选内容</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>入门路线：从原理到工程</h3>
+          <p>覆盖数学基础、模型基础、工程化部署与常见问题定位，配套实战任务。</p>
+          <a class="link" href="https://github.com/soar1233/ai-guide/blob/main/guide/basics.md" target="_blank">查看详情 →</a>
+        </article>
+
+        <article class="card">
+          <h3>精选项目与案例</h3>
+          <p>带注释的开源项目集合，方便快速上手和二次开发。</p>
+          <a class="link" href="https://github.com/soar1233/ai-guide/tree/main/projects" target="_blank">查看项目 →</a>
+        </article>
+
+        <article class="card">
+          <h3>论文与读书笔记</h3>
+          <p>结构化的论文总结与可复现的实验说明，帮助你建立学术与实践的桥梁。</p>
+          <a class="link" href="https://github.com/soar1233/ai-guide/tree/main/papers" target="_blank">浏览笔记 →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section" id="roadmap">
+      <h2 class="section-title">路线图</h2>
+      <div class="timeline">
+        <div class="item">
+          <time>2026 Q2</time>
+          <div class="content">
+            <h4>发布 v1.0 导航官网</h4>
+            <p>整合精选内容，并推出可部署的学习路线。</p>
+          </div>
+        </div>
+        <div class="item">
+          <time>2026 Q3</time>
+          <div class="content">
+            <h4>社区贡献与教程扩展</h4>
+            <p>引入更多社区贡献的案例、工具箱与教学视频。</p>
+          </div>
+        </div>
+        <div class="item">
+          <time>2026 Q4</time>
+          <div class="content">
+            <h4>一键部署示例与CI集成</h4>
+            <p>提供更多一键运行 demo 与 CI 模板，便于复现与教学。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="changelog">
+      <h2 class="section-title">更新日志</h2>
+      <ul class="changelog">
+        <li>
+          <strong>2026-05-07</strong> — 网站上线（初版） &nbsp; <span class="muted">— 核心页面、精选内容与增长图表</span>
+        </li>
+        <li>
+          <strong>2026-04-28</strong> — 合并多条高质量资源与教程目录
+        </li>
+      </ul>
+      <a class="link" href="https://github.com/soar1233/ai-guide/releases" target="_blank">完整 Release →</a>
+    </section>
+
+    <section class="container section" id="growth">
+      <h2 class="section-title">增长趋势</h2>
+      <p class="muted">展示项目的关注度、Star、Fork 与访问趋势（示例数据，基于仓库统计可替换为真实数据）。</p>
+      <div class="chart-wrap">
+        <canvas id="growthChart" width="800" height="400"></canvas>
+      </div>
+    </section>
+
+    <section class="container section callout" id="cta">
+      <h2>加入我们，一起构建开放的 AI 知识社区</h2>
+      <p>在 GitHub 上 Star、Fork、提出 Issue 或提交 PR，让 AI-Guide 变得更有价值。</p>
+      <a class="btn primary" href="https://github.com/soar1233/ai-guide" target="_blank">前往仓库并参与</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2026 AI-Guide · maintained by soar1233</div>
+      <div class="muted">Powered by open-source · Hosted via GitHub Pages</div>
+    </div>
+  </footer>
+
+  <script src="./assets/script.js"></script>
+</body>
+</html>
